@@ -14,6 +14,13 @@ Food recipes website
 - [HTML](https://www.w3.org)
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 
+### Overview
+
+<h1 align="center">
+    <img alt="" src="preview.png" width="200px" />
+</h1>
+
+
 ### Thats it ! :wave:
 
 ---
