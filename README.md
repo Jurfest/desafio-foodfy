@@ -17,7 +17,7 @@ Food recipes website
 ### Overview
 
 <h1 align="center">
-    <img alt="" src="./assets/preview2.png" width="800px" />
+    <img alt="" src="./assets/preview.png" width="940px" />
 </h1>
 
 
