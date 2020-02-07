@@ -22,7 +22,7 @@ header {
 }
 
  .links {
-  margin-left: 218px;
+  margin-left: 222px;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
 } 
@@ -229,3 +229,27 @@ iframe {
   top: 5%;
 }
 
+/*=== RECIPE DETAIL PAGE ===*/
+
+/*=== NOT-FOUND PAGE ===*/
+.error {
+  margin-top: 32px;
+}
+
+.error #first {
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.error #middle {
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.error #last {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+}

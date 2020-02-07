@@ -27,6 +27,12 @@ nunjucks.configure("views", {
   noCache: true
 });
 
+server.get("/recipes/:index", function (req, res) {
+  const recipeIndex = req.params.index;
+
+  console.log(recipes[recipeIndex]);
+})
+
 server.listen(5000, function() {
   console.log('server is running');
 });
