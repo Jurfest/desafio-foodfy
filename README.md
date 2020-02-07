@@ -13,6 +13,9 @@ Food recipes website
 - [JavaScript](https://www.javascript.com)
 - [HTML](https://www.w3.org)
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [NodeJS](https://nodejs.org/en/)
+- [Express](https://expressjs.com)
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 ### :rocket: Overview
 
