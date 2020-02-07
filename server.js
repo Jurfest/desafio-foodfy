@@ -10,11 +10,11 @@ server.use(express.static('public'));
 server.set("view engine", "njk");
 
 server.get('/', function (req, res) {
-  return res.render('index', { items: recipes });
+  return res.render('index', { recipes: recipes });
 });
 
 server.get('/receitas', function (req, res) {
-  return res.render('receitas', { items: recipes });
+  return res.render('receitas', { recipes: recipes });
 });
 
 server.get('/sobre', function (req, res) {

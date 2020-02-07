@@ -14,7 +14,7 @@ Food recipes website
 - [HTML](https://www.w3.org)
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 
-### Overview
+### :rocket: Overview
 
 <h1 align="center">
     <img alt="" src="./public/assets/preview.png" width="940px" />

@@ -20,84 +20,20 @@
   <h2>Mais acessadas</h2>
 
   <section class="recipes">
-  
-    <!-- recipe one -->
-    <div class="recipe" id="burger">
-      <div class="recipe-img-container">
-        <img src="./assets/burger.png" alt="">
+    {% for recipe in recipes %}
+      <!-- recipes -->
+      <div class="recipe" id="{{recipe.id}}">
+        <div class="recipe-img-container">
+          <img src="./assets/{{recipe.id}}.png" alt="">
+        </div>
+        <div class="recipe-content">
+          <p>{{recipe.title}}</p>
+        </div>
+        <div class="recipe-info">
+          <p>{{recipe.author}}</p>
+        </div>
       </div>
-      <div class="recipe-content">
-        <p>Triplo bacon burger</p>
-      </div>
-      <div class="recipe-info">
-        <p>por Jorge Relato</p>
-      </div>
-    </div>
-
-    <!-- recipe two -->
-    <div class="recipe" id="pizza">
-      <div class="recipe-img-container">
-        <img src="./assets/pizza.png" alt="">
-      </div>
-      <div class="recipe-content">
-        <p>Pizza 4 estações</p>
-      </div>
-      <div class="recipe-info">
-        <p>por Fabiana Melo</p>
-      </div>
-    </div>
-
-    <!-- recipe three -->
-    <div class="recipe" id="espaguete">
-      <div class="recipe-img-container">
-        <img src="./assets/espaguete.png" alt="">
-      </div>
-      <div class="recipe-content">
-        <p>Espaguete ao alho</p>
-      </div>
-      <div class="recipe-info">
-        <p>por Júlia Kinoto</p>
-      </div>
-    </div>
-
-    <!-- recipe four -->
-    <div class="recipe" id="lasanha">
-      <div class="recipe-img-container">
-        <img src="./assets/lasanha.png" alt="">
-      </div>
-      <div class="recipe-content">
-        <p>Lasanha mac n' cheese</p>
-      </div>
-      <div class="recipe-info">
-        <p>por Juliano Vieira</p>
-      </div>
-    </div>
-
-    <!-- recipe five -->
-    <div class="recipe" id="lasanha">
-      <div class="recipe-img-container">
-        <img src="./assets/doce.png" alt="">
-      </div>
-      <div class="recipe-content">
-        <p>Docinhos de pão-do-céu</p>
-      </div>
-      <div class="recipe-info">
-        <p>por Ricardo Golvea</p>
-      </div>
-    </div>
-
-    <!-- recipe six -->
-    <div class="recipe" id="asinhas">
-      <div class="recipe-img-container">
-        <img src="./assets/asinhas.png" alt="">
-      </div>
-      <div class="recipe-content">
-        <p>Asinhas de frando ao barbecue</p>
-      </div>
-      <div class="recipe-info">
-        <p>por Vania Steroski</p>
-      </div>
-    </div>
+    {% endfor %}
 
   </section>
 
