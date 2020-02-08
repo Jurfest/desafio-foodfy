@@ -22,9 +22,9 @@ header {
 }
 
  .links {
-  margin-left: 222px;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
+  margin-left: 224px;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
 } 
 
 .links a {
@@ -46,6 +46,7 @@ header {
 
 .links a:hover {
   transition: color 200ms;
+  text-decoration: underline;
 }
 
 #wrapper {
@@ -142,6 +143,7 @@ h3 {
   font-size: 24px;
   line-height: 28px;
   font-family: 'Roboto-Bold', sans-serif;
+  color: #111111;
 }
 .text {
   width: 940px;
@@ -156,80 +158,50 @@ h3 {
   margin-top: 20px;
 }
 
-/*=== MODAL | INACTIVE ===*/
-.modal-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
+/*=== RECIPE DETAIL PAGE ===*/
+
+.recipe-detail-img-container {
+  margin: 0 auto;
+  text-align: center;
+  
 }
 
-.modal {
-  background-color: white;
-  width: 660px;
-  height: 413px;
-  margin: 5vh auto;
-  position: relative;
+.recipe-detail-img-container img {
+  width: 940px;
+  height: 366px;
   border-radius: 15px;
 }
 
-.modal-content iframe{
-  width: 600px;
-  height: 200px;
-  border-radius: 15px;
-  align-content: center;
-  margin-left: 30px;
+.recipe-detail-title {
+  font-family: Roboto-Bold;
+  font-size: 36px;
+  line-height: 46px;
+  color: #111111;
+  text-align: center;
+  margin-top: 35px;
 }
 
-.modal #recipe-anchor { 
+.recipe-detail-author {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  line-height: 30px;
+  color: #777777;
   text-align: center;
-  margin-top: 175px;
-  /* hardcode */
-  color: white; 
 }
 
-.modal #recipe-name {
-  text-align: center;
-  margin-top: 220px;
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.info {
   font-size: 24px;
   line-height: 28px;
-
+  color: #111111;
 }
-
-.modal #recipe-owner {
-   text-align: center;
-   font-size: 18px;
-   line-height: 21px;
-   margin-top: 5px;
-   color: #777777;
-}
-
-.modal .close-modal {
-  color: black;
-  position: absolute;
-  right: 0;
-  right: 8px;
-  top: 8px;
-  cursor: pointer;
-}
-
-/*=== MODAL.ACTIVE ===*/
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-iframe {
-  width: 100%;
-  height: 90%;
-  position: absolute;
-  top: 5%;
-}
-
-/*=== RECIPE DETAIL PAGE ===*/
 
 /*=== NOT-FOUND PAGE ===*/
 .error {
@@ -246,10 +218,4 @@ iframe {
   font-size: 18px;
   line-height: 60px;
   text-align: center;
-}
-
-.error #last {
-  text-align: center;
-  font-size: 16px;
-  line-height: 26px;
 }

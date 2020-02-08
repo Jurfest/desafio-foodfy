@@ -12,7 +12,9 @@
       <!-- recipes -->
       <div class="recipe" id="{{recipe.id}}">
         <div class="recipe-img-container">
-          <img src="./assets/{{recipe.id}}.png" alt="">
+          <a href="/recipes/0">  <!-- concertar -->
+            <img src="./assets/{{recipe.id}}.png" alt="">
+          </a>
         </div>
         <div class="recipe-content">
           <p>{{recipe.title}}</p>
@@ -28,7 +30,9 @@
       <!-- recipes -->
       <div class="recipe" id="{{recipe.id}}">
         <div class="recipe-img-container">
-          <img src="./assets/{{recipe.id}}.png" alt="">
+          <a href="/recipes/1">  <!-- concertar -->
+            <img src="./assets/{{recipe.id}}.png" alt="">
+          </a>
         </div>
         <div class="recipe-content">
           <p>{{recipe.title}}</p>
@@ -47,3 +51,7 @@
   <script src="scripts.js"></script>
 
 {% endblock %}
+
+<a href="/">
+  <img src="./assets/logo.png" alt="">
+</a>
