@@ -23,9 +23,10 @@ Food recipes website
     <img alt="" src="./public/assets/preview.png" width="940px" />
 </h1>
 
-### How to run
+### :arrow_forward: How to run
 
 No terminal:
+<p>$ git clone https://github.com/Jurfest/desafio-foodfy-launchbase.git</p>
 <p>$ cd desafio-foodfy-launchbase</p>
 <p>$ yarn init -y</p>
 <p>$ yarn add express</p>
