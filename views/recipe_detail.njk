@@ -38,6 +38,7 @@
           </p>
         </div>
 
+        
         <h3>Modo de preparo</h3>
         <div class="text" id="preparation">
           <p class="preparation">
@@ -49,12 +50,15 @@
           </p>
         <div>
 
-        <h4 class="info">Informações adicionais</h4>
-        {# <div class="text" id="information"> #}
+        {% if recipe.information %}
+          <h4 class="info">Informações adicionais</h4>
+        {% endif %}
           <p class="information">
-            {{recipe.information}}
+            {% for info in recipeInfoParagraphs %}
+              {{info}}
+              <p> </p>
+            {% endfor %}
           </p>
-        {# <div> #}
       </section>
   
       <footer>

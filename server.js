@@ -30,9 +30,13 @@ server.get('/about', function (req, res) {
 server.get("/recipes/:index", function (req, res) {
   const recipeIndex = req.params.index;
   const recipe = recipes[recipeIndex];
-  console.log(recipe);
-  return res.render('recipe_detail', { recipe: recipe })
-})
+  const recipeInfo = String(recipe.information); // hardcode
+  const recipeInfoParagraphs = recipeInfo.split('\n'); // hardcode
+  return res.render('recipe_detail', {
+    recipe: recipe,
+    recipeInfoParagraphs: recipeInfoParagraphs // hardcode
+  })
+});
 
 // Atention: this error route must be below all other routes
 server.use(function (req, res) {
