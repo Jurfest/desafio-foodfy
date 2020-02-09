@@ -24,7 +24,9 @@
       <!-- recipes -->
       <div class="recipe" id="{{recipe.id}}">
         <div class="recipe-img-container">
-          <img src="./assets/{{recipe.id}}.png" alt="">
+          <a href="/recipes/{{recipe.num}}">
+            <img src="./assets/{{recipe.id}}.png" alt="">
+          </a>
         </div>
         <div class="recipe-content">
           <p>{{recipe.title}}</p>
@@ -38,9 +40,7 @@
   </section>
 
   <footer>
-  <p>Todos os direitos reservados, receitas Foodfy.</p>
+    <p>Todos os direitos reservados, receitas Foodfy.</p>
   </footer>
-
-</body>
 
 {% endblock %}
