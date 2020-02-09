@@ -189,13 +189,10 @@ h3 {
   text-align: center;
 }
 
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
+/* .recipe-info {
+  margin-left: 940px;
+  width: 940px;
+} */
 
 .info {
   font-size: 24px;
@@ -203,7 +200,46 @@ h3 {
   color: #111111;
   margin-top: 35px;
   font-family: "Roboto-Bold", sans-serif;
+  margin-left: 250px;
 }
+
+.paragraphs {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 18px;
+  /* color: #444444; */
+  line-height: 28px;
+  margin-left: 250px;
+  width: 940px;
+  margin-top: 20px;
+} 
+
+.space {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 18px;
+  /* color: #444444; */
+  line-height: 28px;
+  width: 940px;
+  margin-top: 20px;
+}
+
+.minhaDiv {
+  display: flex;
+}
+
+.minhaDiv button {
+  /* background-color: white; */
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #999999;
+  background-color: white;
+  height: 14px;
+}
+
+.minhaDiv button:hover {
+  cursor: pointer;
+}
+
 
 /*=== NOT-FOUND PAGE ===*/
 .error {

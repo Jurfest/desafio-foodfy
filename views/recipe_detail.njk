@@ -27,7 +27,15 @@
           </div>
         </div>
         
-        <h3>Ingredientes</h3>
+        <div class="minhaDiv">
+          <h3>Ingredientes</h3>
+
+          <button type="button" id="btn_ingredients" 
+          onclick="Mudarestado('ingredients', 'btn_ingredients')">
+            ESCONDER
+          </button>
+        </div>
+
         <div class="text" id="ingredients">
           <p class="ingredients">
             {% for ingredient in recipe.ingredients %}
@@ -37,9 +45,18 @@
             {% endfor %}
           </p>
         </div>
+        
 
         
-        <h3>Modo de preparo</h3>
+        <div class="minhaDiv">
+          <h3>Modo de preparo</h3>
+
+          <button type="button" id="btn_preparation" 
+          onclick="Mudarestado('preparation', 'btn_preparation')">
+            ESCONDER
+          </button>
+        </div>
+        
         <div class="text" id="preparation">
           <p class="preparation">
             {% for preparation_step in recipe.preparation %}
@@ -50,19 +67,35 @@
           </p>
         <div>
 
+        </section>
+
         {% if recipe.information %}
-          <h4 class="info">Informações adicionais</h4>
+          <div class="minhaDiv">
+            <h4 class="info">Informações adicionais</h4>
+
+            <button type="button" id="btn_information" 
+            onclick="Mudarestado('information', 'btn_information')">
+              ESCONDER
+            </button>
+          </div>
+          
+            <div class="paragraphs" id="information">
+              <p class="information">
+                {% for info in recipeInfoParagraphs %}
+                  {{info}}
+                  {% if info == "" %}
+                    <p class="space"> </p>
+                  {% endif %}
+                {% endfor %}
+              </p>
+            </div>
+
         {% endif %}
-          <p class="information">
-            {% for info in recipeInfoParagraphs %}
-              {{info}}
-              <p> </p>
-            {% endfor %}
-          </p>
-      </section>
   
       <footer>
         <p>Todos os direitos reservados, receitas Foodfy.</p>
       </footer>
+
+      <script src="/scripts.js"></script>
 
 {% endblock %}
