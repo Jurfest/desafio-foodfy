@@ -23,6 +23,18 @@ Food recipes website
     <img alt="" src="./public/assets/preview.png" width="940px" />
 </h1>
 
+### How to run
+
+No terminal:
+<p>$ cd desafio-foodfy-launchbase</p>
+<p>$ yarn init -y</p>
+<p>$ yarn add express</p>
+<p>$ yarn add nodemon -D</p>
+<p>$ yarn add nunjucks</p>
+<p>$ yarn start</p>
+
+No browser:
+<p>http://localhost:5000</p>
 
 ### Thats it ! :wave:
 
