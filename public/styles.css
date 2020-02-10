@@ -36,6 +36,10 @@ header {
   /* tira undeline do a */
 }
 
+.links a.active {
+  font-weight: bold;
+}
+
 .links #sobre {
   margin-left: 122px;
 }
@@ -224,6 +228,7 @@ h3 {
 
 .minhaDiv {
   display: flex;
+  align-items: baseline; /* Alinha os itens de acordo com a linha base da tipografia */
 }
 
 .minhaDiv button {
@@ -234,6 +239,7 @@ h3 {
   color: #999999;
   background-color: white;
   height: 14px;
+  margin-left: 8px;
 }
 
 .minhaDiv button:hover {
