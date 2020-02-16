@@ -1,13 +1,15 @@
-function Mudarestado(el, btn) {
-  var display = document.getElementById(el).style.display;
-  if (display == "none")
-    document.getElementById(el).style.display = 'block';
-  else
-    document.getElementById(el).style.display = 'none';
+const currentPage = location.pathname;
+const menuItems = document.querySelectorAll(".links a");
 
-  var showOrHide = document.getElementById(btn).textContent;
-  if (showOrHide === "MOSTRAR")
-    document.getElementById(btn).textContent = 'ESCONDER';
-  else
-    document.getElementById(btn).textContent = 'MOSTRAR';
+console.log(`pagina atual: ${currentPage}`);
+
+if (menuItems) {
+  for (item of menuItems) {
+    if ((currentPage == item.getAttribute("href")) || (currentPage.slice(0, -2) == item.getAttribute("href"))) {
+      item.classList.add("active");
+    }
+
+    console.log(currentPage.slice(0, -2));
+
+  }
 }
