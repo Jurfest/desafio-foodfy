@@ -5,14 +5,9 @@ console.log(`pagina atual: ${currentPage}`);
 
 if (menuItems) {
   for (item of menuItems) {
-    if ((currentPage == item.getAttribute("href")) || 
-       (currentPage.slice(0, -2) == item.getAttribute("href")) ||
-       (currentPage.slice(0, -3) == item.getAttribute("href"))
-    ) {
+    if ((currentPage == item.getAttribute("href")) ) {
+      // || (currentPage.slice(0, 8) == item.getAttribute("href"))
       item.classList.add("active");
     }
-
-    console.log(currentPage.slice(0, -2));
-
   }
 }
