@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Gerenciar Receitas | Foodfy Admin</title>
+{% endblock %}
+
+{% block header %}
+  <a href="/">
+    <img src="../assets/logo_dark_mode.png" alt="">
+  </a>
+{% endblock %}
+
+{% block content %}
+  
+  <h3>Gerenciar Receitas</h3>
+
+  <section class="recipes">
+    {% for recipe in recipes %}
+      <!-- recipes -->
+      <div class="recipe" id="{{recipe.id}}">
+        <div class="recipe-img-container">
+          <a href="/recipes/{{recipe.num}}">
+            <img src="../assets/{{recipe.id}}.png" alt="">
+          </a>
+        </div>
+        <div class="recipe-content">
+          <p>{{recipe.title}}</p>
+        </div>
+        <div class="recipe-info">
+          <p>{{recipe.author}}</p>
+        </div>
+        <div class="visualize">
+          <p>Visualizar</p>
+        </div>
+      </div>
+    {% endfor %}
+
+{% endblock %}

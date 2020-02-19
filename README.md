@@ -32,6 +32,7 @@ Inside the terminal:
 <p>$ yarn add express</p>
 <p>$ yarn add nodemon -D</p>
 <p>$ yarn add nunjucks</p>
+<p>$ yarn add method-override</p> 
 <p>$ yarn start</p> <!-- remember to test if scripts in package.json are downloaded with git clone -->
 
 Inside the browser:

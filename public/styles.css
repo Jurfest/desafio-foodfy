@@ -1,8 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 :root {
   /* Aqui dentro posso colocar variaveis no CSS */
   --color-bege: #FBDFDB;
+  --primary-color: #6558C3;
 }
 
 * {
@@ -23,8 +25,7 @@ header {
 
  .links {
   margin-left: 224px;
-  display: grid;
-  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  display: flex;
 } 
 
 .links a {
@@ -34,6 +35,7 @@ header {
   /* normalmente 10px a mais que font size */
   text-decoration: none;
   /* tira undeline do a */
+  align-items: center;
 }
 
 .links a.active {
@@ -46,6 +48,18 @@ header {
 
 .links #receitas {
   margin-left: 30px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.links #admin {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  margin-left: 503px;
+  color: hsl(251, 57%, 37%);
+  margin-top: 5px;
+  align-self: auto;
 }
 
 .links a:hover {
@@ -177,7 +191,7 @@ h3 {
 }
 
 .recipe-detail-title {
-  font-family: Roboto-Bold;
+  font-family: 'Roboto-Bold', sans-serif;
   font-size: 36px;
   line-height: 46px;
   color: #111111;
@@ -186,17 +200,12 @@ h3 {
 }
 
 .recipe-detail-author {
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #777777;
   text-align: center;
 }
-
-/* .recipe-info {
-  margin-left: 940px;
-  width: 940px;
-} */
 
 .info {
   font-size: 24px;
@@ -246,6 +255,29 @@ h3 {
   cursor: pointer;
 }
 
+/*=== RECIPE DETAIL ADMIN PAGE ===*/
+
+.detail-title {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  margin-bottom: 20px;
+}
+
+.detail-title a {
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 19px;
+  color: #FFFFFF;
+  padding: 9px 20px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  margin-top: 32px;
+  width: 95px;
+  text-align: center;
+  margin-left: 333px; 
+}
 
 /*=== NOT-FOUND PAGE ===*/
 .error {
@@ -263,3 +295,4 @@ h3 {
   line-height: 60px;
   text-align: center;
 }
+
