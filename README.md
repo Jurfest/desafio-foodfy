@@ -37,7 +37,7 @@ Inside the terminal:
 Inside the browser:
 <p>http://localhost:5000</p>
 
-### :sunglasses: How to inspect the code :headphones:
+### :microscope: A way to inspect the code
 
 After installing VS Code, follow the steps:
 
