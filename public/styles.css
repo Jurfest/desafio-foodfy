@@ -23,7 +23,12 @@ header {
   border-top: 1px solid white;
 }
 
- .links {
+header.admin_mode_active {
+  background-color: #111111;
+  border-top: 1px solid black;
+}
+
+.links {
   margin-left: 224px;
   display: flex;
 } 
