@@ -260,6 +260,51 @@ h3 {
   cursor: pointer;
 }
 
+/*=== ADMIN ===*/
+
+/*=== INDEX ADMIN ===*/
+
+.index-title {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.index-title a {
+  align-self: flex-end;
+  text-decoration: none;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 19px;
+  color: #FFFFFF;
+  padding: 9px 20px;
+  background: var(--primary-color);
+  margin-left: 643px;
+  border-radius: 4px;
+  margin-top: 29px;
+}
+
+/*=== CREATE ADMIN ===*/
+
+.create-title {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.create-title a {
+  /* align-items: center; */
+  align-self: flex-end;
+  text-decoration: none;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 19px;
+  color: #FFFFFF;
+  padding: 9px 20px;
+  background-color: var(--primary-color);
+  margin-left: 632px;
+  border-radius: 4px;
+  margin-top: 29px;
+}
+
 /*=== RECIPE DETAIL ADMIN PAGE ===*/
 
 .detail-title {
@@ -282,6 +327,96 @@ h3 {
   width: 95px;
   text-align: center;
   margin-left: 333px; 
+}
+
+/* EDIT ADMIN */
+
+.edit-title {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.edit-title a {
+  /* align-items: center; */
+  align-self: flex-end;
+  text-decoration: none;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 19px;
+  color: #FFFFFF;
+  padding: 9px 20px;
+  background: #DC4747;
+  margin-left: 512px;
+  border-radius: 4px;
+  margin-top: 29px;
+}
+
+.edit-title a + a {
+  background-color: var(--primary-color);
+  margin-left: 10px;
+}
+
+.edit-recipe-page {
+  margin-left: 252px;
+  max-width: 940px;
+}
+
+.add-ingredient,
+.add-preparation {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 16px;
+  color: #6558C3;
+  text-align: right;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.add-ingredient:hover, 
+.add-preparation:hover {
+  cursor: pointer;
+}
+
+h6 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #111111;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.image-box,
+.ingredient,
+.preparation-box,
+.info-box {
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  width: 940px;
+  margin-top: 10px;
+}
+
+.image-box input,
+.ingredient input,
+.preparation-box input,
+.info-box input {
+  padding: 15px;
+  margin-left: 5px;
+  width: 900px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 20px;
+}
+
+.info-box {
+  box-sizing: border-box;
+  height: 257px;
+  margin-bottom: 100px;
+}
+
+.info-box input {
+  line-height: 24px;
+  width: 877px;
 }
 
 /*=== NOT-FOUND PAGE ===*/

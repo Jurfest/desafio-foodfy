@@ -1,0 +1,71 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Gerenciar Receitas | Foodfy Admin</title>
+{% endblock %}
+
+{% block header %}
+  <a href="/">
+    <img src="../../../../assets/logo_dark_mode.png" alt="">
+  </a>
+{% endblock %}
+
+{% block content %}
+      <div class="edit-title">
+        <h3>Editando receita</h3>
+        <a href="/admin/recipes/{{recipe.num}}/edit/">Deletar</a>
+        <a href="/admin/recipes/{{recipe.num}}/edit/">Salvar receita</a>
+      </div>
+
+      <section class="edit-recipe-page">
+        <!-- recipe -->
+        <div class="edit-image">
+          <h6>Imagem da receita</h6>
+          <div class="image-box">
+            <input 
+              type="text" 
+              name="recipe-image" 
+              value="{{recipe.image}}" 
+              placeholder="Imagem da receita" 
+            />
+          </div>
+        </div>
+
+        <div id="ingredients"> {#edit-ingredients#}
+          <h6>Ingredientes</h6>
+          {% for ingredient in recipe.ingredients %}
+            <div class="ingredient"> {#edit-ingredient#}
+              <input type="text" name="ingredients[]" value="{{ingredient}}" placeholder="Ingrediente" />
+            </div> 
+          {% endfor %}
+        </div>
+        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+
+        <div id="preparations">
+          <h6>Modo de preparo</h6>
+          {% for preparation_step in recipe.preparation %}
+            <div class="preparation-box">
+              <input type="text" name="preparation[]" value="{{preparation_step}}" placeholder="Modo de preparo" />
+            </div>
+          {% endfor %}
+        </div>
+        <button type="button" class="add-preparation">Adicionar novo passo</button>
+
+        <div class="edit-info">
+          <h6>Informações adicionais</h6>
+          <div class="info-box">
+            <input 
+              type="text" 
+              name="preparation[]" 
+              value="{{recipe.information}}" 
+              placeholder="Modo de preparo" 
+            />
+          </div>
+        </div>
+
+      </section>
+
+      <script src="/admin_scripts.js"></script>
+      <script src="/addField.js"></script>
+
+{% endblock %}

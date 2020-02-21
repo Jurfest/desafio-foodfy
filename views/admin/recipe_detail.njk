@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-  <title>Foodfy Admin | Editar receita de {{recipe.id}} </title>
+  <title>Foodfy Admin | Receita de {{recipe.id}} </title>
 {% endblock %}
 
 {% block header %}
@@ -14,7 +14,7 @@
 {% block content %}
       <div class="detail-title">
         <h3>Receita: {{recipe.title}}</h3>
-        <a href="/admin/recipes/{{recipe.id}}/edit/">Editar receita</a>
+        <a href="/admin/recipes/{{recipe.num}}/edit/">Editar receita</a>
       </div>
       <section class="recipe-page">
         <!-- recipe -->
@@ -70,35 +70,33 @@
           </p>
         <div>
 
-        </section>
+      </section>
 
-        {% if recipe.information %}
-          <div class="minhaDiv">
-            <h4 class="info">Informações adicionais</h4>
+      {% if recipe.information %}
+        <div class="minhaDiv">
+          <h4 class="info">Informações adicionais</h4>
 
-            <button type="button" id="btn_information" 
-            onclick="Mudarestado('information', 'btn_information')">
-              ESCONDER
-            </button>
-          </div>
+          <button type="button" id="btn_information" 
+          onclick="Mudarestado('information', 'btn_information')">
+            ESCONDER
+          </button>
+        </div>
           
-            <div class="paragraphs" id="information">
-              <p class="information">
-                {% for info in recipeInfoParagraphs %}
-                  {{info}}
-                  {% if info == "" %}
-                    <p class="space"> </p>
-                  {% endif %}
-                {% endfor %}
-              </p>
-            </div>
+        <div class="paragraphs" id="information">
+          <p class="information">
+            {% for info in recipeInfoParagraphs %}
+              {{info}}
+              {% if info == "" %}
+                <p class="space"> </p>
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
 
-        {% endif %}
+      {% endif %}
+      <p class="space"> </p>
+
   
-      <footer>
-        <p>Todos os direitos reservados, receitas Foodfy.</p>
-      </footer>
-
       <script src="/changeState.js"></script>
       <script src="/admin_scripts.js"></script>
 
