@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
-const recipes = require('./controllers/recipes');
-const recipesData = require('./data.json');
+const recipes = require('./app/controllers/recipes');
+const recipesData = require('../data.json');
 
 routes.get('/', function (req, res) {
   return res.render('home', { recipes: recipesData.recipes });

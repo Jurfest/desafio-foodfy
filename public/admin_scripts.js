@@ -1,7 +1,6 @@
 const header = document.querySelector("header");
 const items = document.querySelectorAll("header .links a");
 
-
 if (header) {
     header.classList.add("admin_mode_active");
     console.log(items);
