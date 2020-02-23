@@ -17,23 +17,25 @@
     <a href="/admin/recipes/create">Nova</a>
   </div>
 
-  <section class="recipes">
+  <section class="recipes-index">
     {% for recipe in recipes %}
       <!-- recipes -->
-      <div class="recipe" id="{{recipe.id}}">
+      <div class="recipe-index" id="{{recipe.id}}">
         <div class="recipe-img-container">
           <a href="/admin/recipes/{{recipe.num}}">
-            <img src="../assets/{{recipe.id}}.png" alt="">
+            <img src="../assets/{{recipe.id}}.png" alt="" class="recipe-img-adm">
           </a>
         </div>
-        <div class="recipe-content">
-          <p>{{recipe.title}}</p>
-        </div>
-        <div class="recipe-info">
-          <p>{{recipe.author}}</p>
-        </div>
-        <div class="visualize">
-          <p>Visualizar</p>
+        <div class="column_elements">
+          <div class="recipe-content-admin">
+            <p>{{recipe.title}}</p>
+          </div>
+          <div class="recipe-info-admin">
+            <p>por {{recipe.author}}</p>
+          </div>
+          <div class="visualize">
+            <a href="/admin/recipes/{{recipe.num}}">Visualizar</a>
+          </div>
         </div>
       </div>
     {% endfor %}

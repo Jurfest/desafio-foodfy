@@ -124,7 +124,7 @@ h2 {
   margin-top: 20px;
 }
 
-.recipe {
+.recipe-img-container {
   cursor: pointer;
 }
 
@@ -278,10 +278,57 @@ h3 {
   color: #FFFFFF;
   padding: 9px 20px;
   background: var(--primary-color);
-  margin-left: 643px;
+  margin-left: 526px; /* 643px 263px*/
   border-radius: 4px;
-  margin-top: 29px;
+  margin-top: 32px;
 }
+
+.recipes-index {
+  max-width: 940px;
+  margin-left: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.recipe-index {
+  display: flex;
+}
+
+.recipe-img-adm {
+  max-width: 172px;
+  height: 80px;
+  border-radius: 0px;
+}
+
+.column_elements {
+  margin-left: 20px;
+}
+
+.recipe-content-admin {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.recipe-info-admin {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+
+.visualize {
+  margin-top: 5px;
+}
+
+.visualize a {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6558C3;
+  text-decoration: none;
+}
+
 
 /*=== CREATE ADMIN ===*/
 
@@ -356,7 +403,7 @@ h3 {
   margin-left: 10px;
 }
 
-.edit-recipe-page {
+.edit-recipe-admin {
   margin-left: 252px;
   max-width: 940px;
 }
