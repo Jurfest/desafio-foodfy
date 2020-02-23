@@ -3,9 +3,7 @@ const items = document.querySelectorAll("header .links a");
 
 if (header) {
     header.classList.add("admin_mode_active");
-    console.log(items);
     for (item of items) {
-      console.log(item.id);
       if (item.id == "sobre" || item.id == "receitas") {
         changeElementState(item);
       }

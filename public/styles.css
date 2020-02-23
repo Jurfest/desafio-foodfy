@@ -363,7 +363,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-.create-title a {
+.create-title #save-recipe {
   /* align-items: center; */
   align-self: flex-end;
   text-decoration: none;
@@ -373,7 +373,7 @@ h3 {
   color: #FFFFFF;
   padding: 9px 20px;
   background-color: var(--primary-color);
-  margin-left: 632px;
+  margin-left: 630px;
   border-radius: 4px;
   margin-top: 29px;
 }
@@ -391,8 +391,8 @@ h3 {
   margin-bottom: 20px;
 }
 
-.edit-title a {
-  /* align-items: center; */
+.edit-title #delete,
+.edit-title #save {
   align-self: flex-end;
   text-decoration: none;
   font-family: 'Roboto-Bold', sans-serif;
@@ -400,13 +400,16 @@ h3 {
   font-weight: 19px;
   color: #FFFFFF;
   padding: 9px 20px;
-  background: #DC4747;
-  margin-left: 512px;
   border-radius: 4px;
   margin-top: 29px;
 }
 
-.edit-title a + a {
+.edit-title #delete {
+  background: #DC4747;
+  margin-left: 512px;
+}
+
+.edit-title #save {
   background-color: var(--primary-color);
   margin-left: 10px;
 }

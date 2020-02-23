@@ -11,9 +11,13 @@
 {% endblock %}
 
 {% block content %}
+  <form class="form-create" method="POST" action="/admin/recipes">
+
       <div class="create-title">
         <h3>Criando receita</h3>
-        <a href="/admin/recipes">Salvar receita</a>
+        <form id="form-delete" method="POST" action="/admin/recipes">
+          <button type="submit" id="save-recipe">Salvar receita</button>
+        </form>
       </div>
 
       <section class="create-recipe-page">
@@ -83,9 +87,10 @@
         </div>
 
       </section>
+  </form>
 
-      <script src="/admin_scripts.js"></script>
-      <script src="/addPreparation.js"></script>
-      <script src="/addIngredient.js"></script>
+  <script src="/admin_scripts.js"></script>
+  <script src="/addPreparation.js"></script>
+  <script src="/addIngredient.js"></script>
 
 {% endblock %}
