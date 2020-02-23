@@ -234,7 +234,6 @@ h3 {
 .space {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 18px;
-  /* color: #444444; */
   line-height: 28px;
   width: 940px;
   margin-top: 20px;
@@ -278,7 +277,7 @@ h3 {
   color: #FFFFFF;
   padding: 9px 20px;
   background: var(--primary-color);
-  margin-left: 526px; /* 643px 263px*/
+  margin-left: 263px; /* 643px 263px*/
   border-radius: 4px;
   margin-top: 32px;
 }
@@ -296,7 +295,7 @@ h3 {
 }
 
 .recipe-img-adm {
-  max-width: 172px;
+  max-width: 190px; /* 172px */
   height: 80px;
   border-radius: 0px;
 }
@@ -374,6 +373,10 @@ h3 {
   width: 95px;
   text-align: center;
   margin-left: 333px; 
+}
+
+.spacelong {
+  margin-bottom: 51px;
 }
 
 /* EDIT ADMIN */
