@@ -328,6 +328,33 @@ h3 {
   text-decoration: none;
 }
 
+/*=== RECIPE DETAIL ADMIN PAGE ===*/
+
+.detail-title {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  margin-bottom: 20px;
+}
+
+.detail-title a {
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 19px;
+  color: #FFFFFF;
+  padding: 9px 20px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  margin-top: 32px;
+  width: 95px;
+  text-align: center;
+  margin-left: 333px;
+}
+
+.spacelong {
+  margin-bottom: 51px;
+}
 
 /*=== CREATE ADMIN ===*/
 
@@ -351,33 +378,11 @@ h3 {
   margin-top: 29px;
 }
 
-/*=== RECIPE DETAIL ADMIN PAGE ===*/
+.create-recipe-page {
+  margin-left: 252px;
+  max-width: 940px;
 
-.detail-title {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  margin-bottom: 20px;
-}
-
-.detail-title a {
-  align-items: center;
-  text-decoration: none;
-  font-family: 'Roboto-Bold', sans-serif;
-  font-size: 16px;
-  font-weight: 19px;
-  color: #FFFFFF;
-  padding: 9px 20px;
-  background: var(--primary-color);
-  border-radius: 4px;
-  margin-top: 32px;
-  width: 95px;
-  text-align: center;
-  margin-left: 333px; 
-}
-
-.spacelong {
-  margin-bottom: 51px;
-}
+} 
 
 /* EDIT ADMIN */
 
