@@ -24,7 +24,7 @@
         "Retire do congelador, frite ou asse e está pronto."
       ],
       "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \n\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo com tomates e alface."
-    }, 
+    },
     {
       "id": "pizza",
       "num": "1",
@@ -53,7 +53,7 @@
         "Leve novamente ao forno até derreter a mussarela."
       ],
       "information": "Pizza de liquidificador é uma receita deliciosa e super simples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no Foodfy você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!"
-    }, 
+    },
     {
       "id": "asinhas",
       "num": "2",
@@ -72,7 +72,7 @@
         "Para servir fica bonito com salada, ou abuse da criatividade."
       ],
       "information": ""
-    }, 
+    },
     {
       "id": "lasanha",
       "num": "3",
@@ -94,7 +94,7 @@
         "Desligue o fogo e acrescente o creme de leite; misture bem e reserve."
       ],
       "information": "Recheie a lasanha com o que preferir."
-    }, 
+    },
     {
       "id": "espaguete",
       "num": "4",
@@ -120,7 +120,7 @@
         "Coloque as porções nos pratos já com o cheiro do alho, e enfeite com algumas ervas."
       ],
       "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
-    }, 
+    },
     {
       "id": "doce",
       "num": "5",
@@ -144,7 +144,25 @@
         "açúcar de confeiteiro e corte em quadrados."
       ],
       "information": ""
+    },
+    {
+      "id": "6",
+      "num": 6,
+      "image": "https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+      "title": "Burrito",
+      "author": "Diego",
+      "ingredients": [
+        "12 Avocados",
+        "5 xícaras de farinha",
+        "Água",
+        "Carne moída"
+      ],
+      "preparation": [
+        "Asse a massa no forno",
+        "Frite a carne",
+        "Recheie a massa"
+      ],
+      "information": "Pode-se substituir quatro avocados por um abacate."
     }
   ]
 }
-

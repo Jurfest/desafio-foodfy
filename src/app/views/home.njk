@@ -29,14 +29,14 @@
       <div class="recipe" id="{{recipe.id}}">
         <div class="recipe-img-container">
           <a href="/recipes/{{recipe.num}}">
-            <img src="./assets/{{recipe.id}}.png" alt="">
+            <img src="{{recipe.image}}" alt=""> <!-- ./assets/{{recipe.id}}.png -->
           </a>
         </div>
         <div class="recipe-content">
           <p>{{recipe.title}}</p>
         </div>
         <div class="recipe-info">
-          <p>{{recipe.author}}</p>
+          <p>por {{recipe.author}}</p>
         </div>
       </div>
     {% endfor %}

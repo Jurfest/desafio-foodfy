@@ -28,77 +28,83 @@ exports.edit = function(req, res) {
   return res.render('admin/edit', { recipe /*,recipeInfoParagraphs*/ });
 }
 exports.post = function(req, res) { 
-  console.log('estou no post');
-  return res.send('estou no post');
-  // // ckeck if fields are not null
-  // const keys = Object.keys(req.body); // contructor - função que cria objeto
-  // for (key of keys) {
-  //   if (key !== "information") {
-  //     if (req.body[key] == "") {
-  //       return res.send(`O campo ${key} está vazio. Por favor, preencha esse campo.`);
-  //     }
-  //   }
-  // }
 
-  // let {
-  //   image,
-  //   title,
-  //   author,
-  //   ingredients,
-  //   preparation,
-  //   information
-  // } = req.body;
+  // ckeck if fields are not null
+  const keys = Object.keys(req.body); // contructor - função que cria objeto
+  for (key of keys) {
+    if (key !== "information") {
+      if (req.body[key] == "") {
+        return res.send(`O campo ${key} está vazio. Por favor, preencha esse campo.`);
+      }
+    }
+  }
 
-  // const id = Number(data.recipes.length + 1);
-  // const num = id;
-  // data.recipes.push({
-  //   id,
-  //   num,
-  //   image,
-  //   title,
-  //   author,
-  //   ingredients,
-  //   preparation,
-  //   information
-  // });
+  let {
+    image,
+    title,
+    author,
+    ingredients,
+    preparation,
+    information
+  } = req.body;
 
-  // fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
-  //   if (err) return res.send("write file error");
-  //   return res.redirect("/admin/recipes");
-  // });
+  const num = Number(data.recipes.length);
+  const id = String(num);
+  data.recipes.push({
+    id,
+    num,
+    image,
+    title,
+    author,
+    ingredients,
+    preparation,
+    information
+  });
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+    if (err) return res.send("write file error");
+    return res.redirect("/admin/recipes");
+  });
 }
 
 exports.put = function (req, res) { 
-  console.log('estou no put');
-  return res.send('estou no put');
-  // const { num } = req.body;
-  // const id = num;
-  // let index = 0;
-  // const foundRecipe = data.recipes.find(function(recipe, foundIndex) {
-  //   if (id == recipe.id) {
-  //     index = foundIndex;
-  //     return true;
-  //   }
-  // });
+  const { id } = req.body;
+  
+  let index = 0;
 
-  // if (!foundInstructor) return res.send("Instructor not found.");
+  const foundRecipe = data.recipes.find(function(recipe, foundIndex) {
+    if (id == recipe.id) {
+      index = foundIndex;
+      return true;
+    }
+  });
 
-  // const recipe = {
-  //   ...foundRecipe, // spread operator
-  //   ingredients: foundRecipe.ingredients, // maybe it's not necessary
-  //   preparation: foundRecipe.preparation, // perhaps not necessary
-  // }
+  if (!foundRecipe) return res.send("Recipe not found.");
 
-  // data.recipes[index] = recipe;
-  // fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
-  //   if(err) return res.send('Write error');
-  //   return res.redirect('/admin/recipes');
-  // });
+  const recipe = {
+    ...foundRecipe, // spread operator
+    ...req.body
+  }
+
+  data.recipes[index] = recipe;
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+    if(err) return res.send('Write error');
+    return res.redirect('/admin/recipes');
+  });
 }
 
 exports.delete = function (req, res) {
-  console.log('estou no delete');
-  // const foundRecipe = data.recipes.find(recipe => recipe.id == id);
-  res.send('estou no delete');
-  return
+  const { id } = req.body;
+
+  const filteredRecipes = data.recipes.filter(recipe => recipe.id != id);
+  // const filteredRecipes = data.recipes.filter(function(recipe) {
+  //   return recipe.id != id;
+  // });
+
+  data.recipes = filteredRecipes;
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+    if (err) return res.send("update file without instructor to be deleted error");
+    return res.redirect(`/admin/recipes`);
+  });
 }
